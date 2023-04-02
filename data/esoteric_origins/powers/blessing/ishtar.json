@@ -1,0 +1,12 @@
+{
+    "name": "Everbloom",
+    "description": "Spring and fertility will bow upon your presence, for Ishtar has blessed you with her lush, prosperity gift.\n\nObtain 5 permanent hearts.\n",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": 10,
+        "name": "ishtar"
+    },
+    "update_health": true
+}

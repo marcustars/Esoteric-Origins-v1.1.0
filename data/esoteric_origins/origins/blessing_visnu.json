@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Visnu",
+    "powers": [
+        "esoteric_origins:blessing/visnu"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

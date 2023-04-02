@@ -1,0 +1,9 @@
+{
+    "name": "The Crystal Guru",
+    "description": "As a Crystal Guru, you aim to reach expertise in the School of Illusion.\n\nYour knowledge revolves the art of Amethyst Imbuement.\n",
+    "powers": [
+        "esoteric_origins:origin/refraction",
+        "esoteric_origins:origin/start/illusioners"
+    ],
+    "impact": 0
+}

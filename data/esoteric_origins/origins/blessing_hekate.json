@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Hekate",
+    "powers": [
+        "esoteric_origins:blessing/hekate"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

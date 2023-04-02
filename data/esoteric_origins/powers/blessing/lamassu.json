@@ -1,0 +1,6 @@
+{
+    "name": "Gliding Wind",
+    "description": "The gift of Lamassu grants their bearer great lightweightness.\n\nGlide as if wearing an elytra.\n",
+    "type": "origins:elytra_flight",
+    "render_elytra": true
+}

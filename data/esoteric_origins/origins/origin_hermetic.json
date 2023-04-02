@@ -1,0 +1,9 @@
+{
+    "name": "The Hermetic",
+    "description": "As a Hermetic, you aim to reach expertise in the School of Transmutation.\n\nYour knowledge revolves the art of Miskatonic Mysteries.\n",
+    "powers": [
+        "esoteric_origins:origin/animal_transmutation",
+        "esoteric_origins:origin/start/transmuters"
+    ],
+    "impact": 0
+}

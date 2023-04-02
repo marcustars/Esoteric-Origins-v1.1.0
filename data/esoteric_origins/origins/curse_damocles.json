@@ -1,0 +1,8 @@
+{
+    "name": "Curse of Damocles",
+    "powers": [
+        "esoteric_origins:curse/damocles"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Tyche",
+    "powers": [
+        "esoteric_origins:blessing/tyche"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Curse of Achilles",
+    "powers": [
+        "esoteric_origins:curse/achilles"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

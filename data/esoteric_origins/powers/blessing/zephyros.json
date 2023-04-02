@@ -1,0 +1,19 @@
+{
+    "name": "Aetherian",
+    "description": "The winds are in your favour ever since Zephyros blessed you. In the Higher Realm, you shall encounter your wealth.\n\nYour home is The Lost Paradise.\n\nSneaking mid-air slows your fall.\n",
+    "type": "origins:multiple",
+    "l0": {
+        "type": "origins:modify_player_spawn",
+        "dimension": "paradise_lost:paradise_lost",
+        "spawn_strategy": "default",
+        "dimension_distance_multiplier": 1
+    },
+    "l1": {
+        "condition": {
+            "type": "origins:sneaking"
+        },
+        "type": "origins:modify_falling",
+        "velocity": 0.01,
+        "take_fall_damage": false
+    }
+}

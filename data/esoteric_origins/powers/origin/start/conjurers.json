@@ -1,0 +1,9 @@
+{
+    "name": "Gift of The School",
+    "description": "The School of Conjuration welcomes you warmly.",
+    "type": "origins:starting_equipment",
+    "stack": {
+        "item": "bewitchment:brazier",
+        "amount": 1
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "The Botanist",
+    "description": "As a Botanist, you aim to reach expertise in the School of Evocation.\n\nYour knowledge revolves the art of Botania.\n",
+    "powers": [
+        "esoteric_origins:origin/golemancy",
+        "esoteric_origins:origin/start/evokers"
+    ],
+    "impact": 0
+}

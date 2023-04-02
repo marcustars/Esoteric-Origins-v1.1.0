@@ -1,0 +1,39 @@
+{
+  "block_states": {
+    "bewitchment:witch_cauldron": "minecraft:cauldron",
+    "bewitchment:stone_witch_altar": "minecraft:stone",
+    "bewitchment:mossy_cobblestone_witch_altar": "minecraft:mossy_cobblestone",
+    "bewitchment:prismarine_witch_altar": "minecraft:prismarine",
+    "bewitchment:nether_brick_witch_altar": "minecraft:nether_bricks",
+    "bewitchment:blackstone_witch_altar": "minecraft:blackstone",
+    "bewitchment:golden_witch_altar": "minecraft:gold_block",
+    "bewitchment:end_stone_witch_altar": "minecraft:end_stone",
+    "bewitchment:obsidian_witch_altar": "minecraft:obsidian",
+    "bewitchment:purpur_witch_altar": "minecraft:purpur_block",
+    "besmirchment:phylactery": "minecraft:cobblestone",
+    "bewitchment:crystal_ball": "minecraft:glass",
+    "bewitchment:brazier": "minecraft:oak_fence"
+  },
+  "items": {
+    "bewitchment:book_of_shadows": "minecraft:book",
+    "bewitchment:athame": "minecraft:iron_sword",
+    "bewitchment:aconite_seeds": "minecraft:wheat_seeds",
+    "bewitchment:mandrake_seeds": "minecraft:wheat_seeds",
+    "bewitchment:belladonna": "minecraft:wheat",
+    "bewitchment:mandrake_root": "minecraft:wheat",
+    "bewitchment:aconite": "minecraft:wheat",
+    "bewitchment:taglock": "minecraft:potion",
+    "bewitchment:chalk": "minecraft:stick",
+    "bewitchment:golden_chalk": "minecraft:stick",
+    "bewitchment:fiery_chalk": "minecraft:stick",
+    "bewitchment:eldritch_chalk": "minecraft:stick",
+    "bewitchment:garlic": "minecraft:wheat_seeds",
+    "bewitchment:dragons_blood_resin": "minecraft:brown_dye",
+    "bewitchment:snake_tongue": "minecraft:red_dye",
+    "bewitchment:demon_horn": "minecraft:black_dye",
+    "bewitchment:demon_heart": "minecraft:red_dye",
+    "besmirchment:lich_gem": "minecraft:emerald",
+    "bewitchment:belladonna_seeds": "minecraft:wheat_seeds"
+  },
+  "advancement": "esoteric_origins:conjuration"
+}

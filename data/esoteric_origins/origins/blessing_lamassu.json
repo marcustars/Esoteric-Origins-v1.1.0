@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Lamassu",
+    "powers": [
+        "esoteric_origins:blessing/lamassu"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,19 @@
+{
+    "name": "The Heel",
+    "description": "Oh the heel of Achilles, a tragedy of the invincible. His weakness imbues your soul with indescriptible pain.\n\nYou may die from any hit you take.\n",
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+        "type": "origins:chance",
+        "chance": 0.05,
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @p"
+                }
+            ]
+        }
+    },
+    "cooldown": 1
+}

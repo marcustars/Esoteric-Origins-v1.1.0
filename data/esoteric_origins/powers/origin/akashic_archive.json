@@ -1,0 +1,9 @@
+{
+    "name": "Akashic Archive",
+    "description": "Any amateur Spell Scribe has to have the ability to transfer their knowledge into a higher realm, a universal library of unlimited reach, which only those who know about its existence can access.\n\n[Primary] opens an extra inventory.",
+    "type": "origins:inventory",
+    "title": "Akashic Archive",
+    "container_type": "chest",
+    "key": "primary",
+    "recoverable": true
+}

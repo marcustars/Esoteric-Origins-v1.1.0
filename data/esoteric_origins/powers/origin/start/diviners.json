@@ -1,0 +1,19 @@
+{
+    "name": "Gift of The School",
+    "description": "The School of Divination welcomes you warmly.",
+    "type": "origins:starting_equipment",
+    "stacks": [
+        {
+            "item": "minecraft:budding_amethyst",
+            "amount": 1
+        },
+        {
+            "item": "spectrum:budding_citrine",
+            "amount": 1
+        },
+        {
+            "item": "spectrum:budding_topaz",
+            "amount": 1
+        }
+    ]
+}

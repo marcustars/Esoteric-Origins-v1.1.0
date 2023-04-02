@@ -1,0 +1,8 @@
+{
+    "name": "Curse of Atlas",
+    "powers": [
+        "esoteric_origins:curse/atlas"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Gilgamesh",
+    "powers": [
+        "esoteric_origins:blessing/gilgamesh"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

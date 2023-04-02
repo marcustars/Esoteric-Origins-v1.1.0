@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Trismegistus",
+    "powers": [
+        "esoteric_origins:blessing/trismegistus"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

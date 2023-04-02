@@ -1,0 +1,8 @@
+{
+    "name": "Curse of Hades",
+    "powers": [
+        "esoteric_origins:curse/hades"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

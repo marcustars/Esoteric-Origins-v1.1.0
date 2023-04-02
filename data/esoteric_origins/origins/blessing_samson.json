@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Samson",
+    "powers": [
+        "esoteric_origins:blessing/samson"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

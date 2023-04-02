@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:writable_book"
+        },
+        "title": {
+            "text": "School of Abjuration"
+        },
+        "description": {
+            "text": "Description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "esoteric_origins:main_advancement",
+    "criteria": {
+        "l0": {
+            "trigger": "origins:chose_origin",
+            "conditions": {
+                "origin": "esoteric_origins:school_abjuration"
+            }
+        }
+    }
+}

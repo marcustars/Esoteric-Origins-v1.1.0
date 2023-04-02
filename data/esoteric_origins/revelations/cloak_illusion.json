@@ -1,0 +1,14 @@
+{
+  "block_states": {
+    "amethyst_imbuement:crystal_altar": "minecraft:crafting_table",
+    "amethyst_imbuement:altar_of_experience": "minecraft:enchanting_table",
+    "amethyst_imbuement:disenchanting_table": "minecraft:enchanting_table",
+    "amethyst_imbuement:imbuing_table": "minecraft:enchanting_table"
+  },
+  "items": {
+    "amethyst_imbuement:glistering_tome": "minecraft:book",
+    "amethyst_imbuement:book_of_lore": "minecraft:book",
+    "amethyst_imbuement:book_of_mythos": "minecraft:book"
+  },
+  "advancement": "esoteric_origins:illusion"
+}

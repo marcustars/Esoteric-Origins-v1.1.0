@@ -1,0 +1,74 @@
+{
+    "name": "Heliophobia",
+    "description": "As he flew towards the sun, Icarus realized his dream was soon to be his demise.\n\nWhen exposed to sun, you slowly become crazy and catch fire.\n",
+    "type": "origins:multiple",
+    "sun_bar": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 14
+        }
+    },
+    "sun_bar_charge": {
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_sun_bar",
+            "change": 1,
+            "operation": "add"
+        }
+    },
+    "sun_bar_deplete": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:exposed_to_sun"
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_sun_bar",
+            "change": -1,
+            "operation": "add"
+        }
+    },
+    "sun_phobia": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_sun_bar",
+            "comparison": ">=",
+            "compare_to": 50
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 1,
+        "duration_per_stack": 200,
+        "tick_rate": 199,
+        "effect": {
+            "effect": "miskatonicmysteries:mania",
+            "duration": 100,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": false
+        }
+    },
+    "sun_burn": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_sun_bar",
+            "comparison": "==",
+            "compare_to": 100
+        },
+        "type": "origins:burn",
+        "interval": 19,
+        "burn_duration": 1
+    }
+}

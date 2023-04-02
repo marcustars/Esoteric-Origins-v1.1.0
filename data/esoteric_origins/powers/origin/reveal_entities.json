@@ -1,0 +1,19 @@
+{
+    "name": "Entity Divination",
+    "description": "Clairvoyance is often part of a Diviner's curriculum. Foes can be detected and their movements predicted to one's benefit.\n\n[Sneak] to enter a clairvoyant state of mind.\n",
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "tick_rate": 19,
+    "effect": {
+        "effect": "miskatonicmysteries:clairvoyance",
+        "duration": 20,
+        "amplifier": 0,
+        "show_particles": false,
+        "show_icon": false
+    }
+}

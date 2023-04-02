@@ -1,0 +1,80 @@
+{
+    "name": "Titan",
+    "description": "Condemned to hold the celestial sphere on his back, The Titan Atlas cursed your fate and turned you into one of them.\n\nYou are now a titan.\n",
+    "type": "origins:action_on_callback",
+    "execute_chosen_when_orb": true,
+    "entity_action_lost": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:eye_height 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:hitbox_height 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:width 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:hitbox_width 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:motion 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:jump_height 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:step_height 1 @p"
+            }
+        ]
+    },
+    "entity_action_added": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:eye_height 2 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 2 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:hitbox_height 2 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:width 2 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:hitbox_width 2 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:motion 1.25 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:jump_height 1.25 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:step_height 2 @p"
+            }
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Curse of Gulliver",
+    "powers": [
+        "esoteric_origins:curse/gulliver"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

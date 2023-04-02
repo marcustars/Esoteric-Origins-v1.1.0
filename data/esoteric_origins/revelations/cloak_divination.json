@@ -1,0 +1,11 @@
+{
+  "block_states": {
+    "spectrum:pedestal_basic_amethyst": "minecraft:amethyst_block",
+    "spectrum:pedestal_basic_citrine": "spectrum:citrine_block",
+    "spectrum:pedestal_basic_topaz": "spectrum:topaz_block"
+  },
+  "items": {
+    "spectrum:guidebook": "minecraft:book"
+  },
+  "advancement": "esoteric_origins:divination"
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Zephyros",
+    "powers": [
+        "esoteric_origins:blessing/zephyros"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

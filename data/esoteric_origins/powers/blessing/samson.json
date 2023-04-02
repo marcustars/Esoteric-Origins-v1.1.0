@@ -1,0 +1,245 @@
+{
+    "name": "Rage",
+    "description": "Whether a blessing or a curse, Samson was irascible for the unfair, and his anger he deposited on you.\n\nBuids up rage in combat, increasing damage dealt.\n",
+    "type": "origins:multiple",
+    "bar": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 5,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_bar",
+                "comparison": "!=",
+                "compare_to": 0
+            }
+        }
+    },
+    "hit": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_bar",
+                    "comparison": "!=",
+                    "compare_to": 100
+                }
+            ]
+        },
+        "type": "origins:self_action_on_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_bar",
+            "change": 1,
+            "operation": "add"
+        },
+        "cooldown": 20
+    },
+    "self_hit": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_bar",
+                    "comparison": "!=",
+                    "compare_to": 100
+                }
+            ]
+        },
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_bar",
+            "change": 0,
+            "operation": "add"
+        },
+        "cooldown": 20
+    },
+    "damage1": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_bar",
+                    "comparison": ">=",
+                    "compare_to": 15
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_bar",
+                    "comparison": "<",
+                    "compare_to": 33
+                }
+            ]
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifiers": [
+            {
+                "operation": "addition",
+                "value": 1
+            }
+        ]
+    },
+    "damage2": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_bar",
+                    "comparison": ">=",
+                    "compare_to": 33
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_bar",
+                    "comparison": "<",
+                    "compare_to": 66
+                }
+            ]
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifiers": [
+            {
+                "operation": "addition",
+                "value": 2
+            }
+        ]
+    },
+    "damage3": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_bar",
+                    "comparison": ">=",
+                    "compare_to": 66
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_bar",
+                    "comparison": "<",
+                    "compare_to": 100
+                }
+            ]
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifiers": [
+            {
+                "operation": "addition",
+                "value": 3
+            }
+        ]
+    },
+    "damage4": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_bar",
+                    "comparison": "==",
+                    "compare_to": 100
+                }
+            ]
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifiers": [
+            {
+                "operation": "addition",
+                "value": 4
+            }
+        ]
+    },
+    "ooc": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 20,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": false,
+            "bar_index": 1
+        }
+    },
+    "timer": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_ooc",
+                    "comparison": "!=",
+                    "compare_to": 20
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_ooc",
+            "change": 1,
+            "operation": "add"
+        }
+    },
+    "drain": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_ooc",
+                    "comparison": "==",
+                    "compare_to": 20
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_bar",
+            "change": -4,
+            "operation": "add"
+        }
+    },
+    "deal": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_ooc",
+                "change": 0,
+                "operation": "set"
+            }
+        },
+        "cooldown": 1
+    },
+    "taken": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_ooc",
+            "change": 0,
+            "operation": "set"
+        },
+        "cooldown": 20
+    },
+    "shaking": {
+        "condition": {
+            "type": "origins:health",
+            "comparison": "<",
+            "compare_to": 8
+        },
+        "type": "origins:shaking"
+    }
+}

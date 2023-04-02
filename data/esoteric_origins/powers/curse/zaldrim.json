@@ -1,0 +1,89 @@
+{
+    "name": "The Drim Mask",
+    "description": "The Painters of Noradrim crafted this mask for a worthy warrior, but to you, it only causes suffering and inflicts paranoia.\n\nYou wear a permanent mask. As it consumes you, you obtain strength from your own sanity.\n",
+    "type": "origins:multiple",
+    "mask_item": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "item replace entity @p armor.head with air"
+        },
+        "entity_action_added": {
+            "type": "origins:execute_command",
+            "command": "item replace entity @p armor.head with bwplus:leshon_skull{Unbreakable:1,display:{Name:\"{\\\"text\\\":\\\"Drim Mask\\\",\\\"color\\\":\\\"gold\\\"}\",Lore:[\"\\\"Do not be consumed by The Soul within\\\"\"]},Enchantments:[{id:binding_curse,lvl:1}]}"
+        }
+    },
+    "mask_effects": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "head",
+            "item_condition": {
+                "type": "origins:nbt",
+                "nbt": "{Unbreakable:1,display:{Name:\"{\\\"text\\\":\\\"Drim Mask\\\",\\\"color\\\":\\\"gold\\\"}\",Lore:[\"\\\"Do not be consumed by The Soul within\\\"\"]},Enchantments:[{id:binding_curse,lvl:1}]}"
+            }
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 1,
+        "duration_per_stack": 200,
+        "tick_rate": 199,
+        "effects": [
+            {
+                "effect": "minecraft:strength",
+                "duration": 100,
+                "amplifier": 1,
+                "show_particles": false,
+                "show_icon": false
+            },
+            {
+                "effect": "miskatonicmysteries:resonance",
+                "duration": 100,
+                "amplifier": 1,
+                "show_particles": false,
+                "show_icon": false
+            },
+            {
+                "effect": "slowness",
+                "duration": 100,
+                "amplifier": 2,
+                "show_particles": false,
+                "show_icon": false
+            }
+        ]
+    },
+    "unequip_mask": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:equipped_item",
+            "equipment_slot": "head",
+            "item_condition": {
+                "type": "origins:nbt",
+                "nbt": "{Unbreakable:1,display:{Name:\"{\\\"text\\\":\\\"Drim Mask\\\",\\\"color\\\":\\\"gold\\\"}\",Lore:[\"\\\"Do not be consumed by The Soul within\\\"\"]},Enchantments:[{id:binding_curse,lvl:1}]}"
+            }
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "kill @p"
+        }
+    },
+    "slowness_sprint": {
+        "condition": {
+            "type": "origins:sprinting"
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 1,
+        "max_stacks": 1,
+        "duration_per_stack": 60,
+        "tick_rate": 59,
+        "effect": {
+            "effect": "slowness",
+            "duration": 100,
+            "amplifier": 2,
+            "show_particles": false,
+            "show_icon": false
+        }
+    }
+}

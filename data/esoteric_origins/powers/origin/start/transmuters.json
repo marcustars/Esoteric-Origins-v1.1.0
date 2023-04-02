@@ -1,0 +1,15 @@
+{
+    "name": "Gift of The School",
+    "description": "The School of Transmutation welcomes you warmly.",
+    "type": "origins:starting_equipment",
+    "stacks": [
+        {
+            "item": "miskatonicmysteries:blackstone_altar",
+            "amount": 1
+        },
+        {
+            "item": "miskatonicmysteries:necronomicon",
+            "amount": 1
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Double-edged",
+    "description": "The Curse of Damocles roams your being, the sword lurks within you, waiting for a misfortune.\n\nEvery hit you deal, you take back.",
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:damage",
+                    "amount": 1,
+                    "source": {
+                        "name": "magic.player",
+                        "bypasses_armor": true,
+                        "unblockable": true,
+                        "magic": true
+                    }
+                }
+            }
+        ]
+    },
+    "cooldown": 1
+}

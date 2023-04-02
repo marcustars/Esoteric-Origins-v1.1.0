@@ -1,0 +1,9 @@
+{
+    "name": "The Bewitcher",
+    "description": "As a Bewitcher, you aim to reach expertise in the School of Conjuration.\n\nYour knowledge revolves the art of Bewitchment.\n",
+    "powers": [
+        "esoteric_origins:origin/teleportation",
+        "esoteric_origins:origin/start/conjurers"
+    ],
+    "impact": 0
+}

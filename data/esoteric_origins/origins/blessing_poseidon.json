@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Poseidon",
+    "powers": [
+        "esoteric_origins:blessing/poseidon"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Thrice Great",
+    "description": "The Trismegistus, bearer of the philosopher stone and eternal life, shared with you the secrets of rejuvenation... partially.\n\nHunger drains three times slower than usual.\n",
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 0.33
+    }
+}

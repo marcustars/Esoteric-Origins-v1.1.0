@@ -1,0 +1,24 @@
+{
+    "name": "Delphimorphosis",
+    "description": "The God of the oceans is grateful for you, and his marine blessing you receive in return.\n\nPress [Secondary] underwater to morph into a dolphin. Press on land to return to your human form.\n",
+    "type": "origins:multiple",
+    "dolphin_morph": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            },
+            "if_action": {
+                "type": "origins:execute_command",
+                "command": "identity equip @p minecraft:dolphin"
+            },
+            "else_action": {
+                "type": "origins:execute_command",
+                "command": "identity unequip @p"
+            }
+        },
+        "key": "secondary"
+    }
+}

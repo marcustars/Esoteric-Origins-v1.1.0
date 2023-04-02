@@ -1,0 +1,8 @@
+{
+    "name": "Curse of Icarus",
+    "powers": [
+        "esoteric_origins:curse/icarus"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,226 @@
+{
+    "name": "Golden",
+    "description": "Greed is never the answer, everyone told Kind Midas, though he never listened. His golden feeble dream haunts you now.\n\nYou turn your surroundings into gold when your mania strikes.\n",
+    "type": "origins:multiple",
+    "gold_mania_bar": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 0
+        },
+        "max_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_gold_mania_bar",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 paradise_lost:mother_aurel_door replace #doors"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 paradise_lost:mother_aurel_fence replace #fences"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 paradise_lost:mother_aurel_trapdoor replace #trapdoors"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 paradise_lost:mother_aurel_slab replace #slabs"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 paradise_lost:mother_aurel_stairs replace #stairs"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 edenring:golden_grass replace #replaceable_plants"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 paradise_lost:luminar replace #flowers"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 paradise_lost:mother_aurel_log replace #logs"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 paradise_lost:mother_aurel_sign replace #signs"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 paradise_lost:mother_aurel_pressure_plate replace #pressure_plates"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 mythicmetals:raw_midas_gold_block replace #mineable/pickaxe"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 botania:golden_grass replace #mineable/shovel"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 paradise_lost:mother_aurel_leaves replace #leaves"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 minecraft:melon replace spectrum:glistering_melon"
+                    },
+                    "ticks": 0
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "block.amethyst_block.break",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        }
+    },
+    "gold_charge_time": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_gold_mania_bar",
+            "change": 1,
+            "operation": "add"
+        }
+    },
+    "gold_charge_damage": {
+        "type": "origins:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_gold_mania_bar",
+            "change": 10,
+            "operation": "add"
+        },
+        "cooldown": 1
+    },
+    "gold_charge_food": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<=",
+            "compare_to": 15
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_gold_mania_bar",
+            "change": 3,
+            "operation": "add"
+        }
+    },
+    "gold_charge_health": {
+        "condition": {
+            "type": "origins:health",
+            "comparison": "<=",
+            "compare_to": 15
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_gold_mania_bar",
+            "change": 3,
+            "operation": "add"
+        }
+    },
+    "gold_armor_restriction": {
+        "type": "origins:restrict_armor",
+        "head": {
+            "inverted": true,
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "mythicmetals:midas_gold_helmet"
+            }
+        },
+        "chest": {
+            "inverted": true,
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "mythicmetals:midas_gold_chestplate"
+            }
+        },
+        "legs": {
+            "inverted": true,
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "mythicmetals:midas_gold_leggings"
+            }
+        },
+        "feet": {
+            "inverted": true,
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "mythicmetals:midas_gold_boots"
+            }
+        }
+    }
+}

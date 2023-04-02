@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "esoteric_origins:wizard_tower_structure",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "spacing": 100,
+      "separation": 60,
+      "salt": 1646207470
+    }
+  }

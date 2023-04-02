@@ -1,0 +1,65 @@
+{
+    "name": "Golemancy",
+    "description": "Infusing your plants with mana didn't seem enough for more... animate beings. Using your knowledge regarding \"manapulation\", you are able to create specialized protectors.\n\n[Primary] summons a golem.\n",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:chance",
+                "chance": 0.1,
+                "action": {
+                    "type": "origins:spawn_entity",
+                    "entity_type": "wetlands:copperswampgolem",
+                    "tag": "{PlayerCreated:1b}"
+                },
+                "fail_action": {
+                    "type": "origins:chance",
+                    "chance": 0.3,
+                    "action": {
+                        "type": "origins:spawn_entity",
+                        "entity_type": "minecraft:iron_golem"
+                    },
+                    "fail_action": {
+                        "type": "origins:chance",
+                        "chance": 0.5,
+                        "action": {
+                            "type": "origins:spawn_entity",
+                            "entity_type": "strawgolem:strawnggolem"
+                        },
+                        "fail_action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:spawn_entity",
+                                    "entity_type": "strawgolem:strawgolem"
+                                },
+                                {
+                                    "type": "origins:spawn_entity",
+                                    "entity_type": "strawgolem:strawgolem"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle glow ~ ~ ~ 0.5 0.5 0.5 0.3 100"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.villager.work_cleric",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 12000,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 23
+    },
+    "key": "primary"
+}

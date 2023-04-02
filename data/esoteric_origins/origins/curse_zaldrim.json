@@ -1,0 +1,8 @@
+{
+    "name": "Curse of The Zaldrim",
+    "powers": [
+        "esoteric_origins:curse/zaldrim"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

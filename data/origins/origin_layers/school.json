@@ -1,0 +1,81 @@
+{
+    "order": 2,
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "esoteric_origins:origin_spell_scribe",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "esoteric_origins:school_abjuration"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "esoteric_origins:origin_hermetic",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "esoteric_origins:school_transmutation"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "esoteric_origins:origin_bewitcher",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "esoteric_origins:school_conjuration"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "esoteric_origins:origin_diviner",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "esoteric_origins:school_divination"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "esoteric_origins:origin_medium",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "esoteric_origins:school_enchantment"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "esoteric_origins:origin_botanist",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "esoteric_origins:school_evocation"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "esoteric_origins:origin_crystal_guru",
+                "layer": "origins:origin"
+            },
+            "origins": [
+                "esoteric_origins:school_illusion"
+            ]
+        }
+    ],
+    "enabled": true,
+    "replace": true,
+    "gui_title": {
+        "choose_origin": "Schools of The Art",
+        "view_origin": "Schools of The Art"
+    }
+}

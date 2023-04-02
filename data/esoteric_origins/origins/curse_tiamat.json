@@ -1,0 +1,8 @@
+{
+    "name": "Curse of Tiamat",
+    "powers": [
+        "esoteric_origins:curse/tiamat"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

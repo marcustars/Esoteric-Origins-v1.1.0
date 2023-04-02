@@ -1,0 +1,21 @@
+{
+    "name": "Underworldian",
+    "description": "The fire of the Underworld consumes your soul, the Curse of Hades haunts the unworthy.\n\nYour home is The Nether.\n\nYou take x2 damage from fire.\n",
+    "type": "origins:multiple",
+    "l0": {
+        "type": "origins:modify_player_spawn",
+        "dimension": "minecraft:the_nether",
+        "spawn_strategy": "default",
+        "dimension_distance_multiplier": 1
+    },
+    "l1": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:fire"
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 2
+        }
+    }
+}

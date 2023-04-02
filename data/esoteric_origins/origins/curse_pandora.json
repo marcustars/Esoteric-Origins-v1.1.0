@@ -1,0 +1,8 @@
+{
+    "name": "Curse of Pandora",
+    "powers": [
+        "esoteric_origins:curse/pandora"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Hunter",
+    "description": "You draw your arrows fiercely, and the lethal projectile is blessed in strength by Artemis.\n\nDeal x1.5 more damage using projectiles.\n",
+    "type": "origins:modify_projectile_damage",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 1.5
+    }
+}

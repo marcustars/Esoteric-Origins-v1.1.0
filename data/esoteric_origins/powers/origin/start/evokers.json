@@ -1,0 +1,9 @@
+{
+    "name": "Gift of The School",
+    "description": "The School of Evocation welcomes you warmly.",
+    "type": "origins:starting_equipment",
+    "stack": {
+        "item": "botania:gourmaryllis",
+        "amount": 1
+    }
+}

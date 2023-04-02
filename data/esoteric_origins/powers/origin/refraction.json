@@ -1,0 +1,263 @@
+{
+    "name": "Refraction",
+    "description": "Light inciding a crystal has extremely useful properties in the school of illusion. Storing part of a projectile's damage as energy, you're able to unleash your rage.\n\n[Primary] uses stored projectile energy to shoot a beam. When the storage reaches its maximum, a barrage will be shot.\n",
+    "type": "origins:multiple",
+    "reflect_bar": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 7
+        },
+        "max_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:raycast",
+                        "distance": 20,
+                        "block": false,
+                        "entity": true,
+                        "shape_type": "collider",
+                        "fluid_handling": "any",
+                        "bientity_action": {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:damage",
+                                "amount": 6,
+                                "source": {
+                                    "name": "magic.player"
+                                }
+                            }
+                        },
+                        "before_action": {
+                            "type": "origins:play_sound",
+                            "sound": "entity.arrow.shoot",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        "hit_action": {
+                            "type": "origins:play_sound",
+                            "sound": "entity.arrow.hit_player",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        "command_along_ray": "particle visuality:sparkle ~ ~ ~ 0.25 0.25 0.25 0 10",
+                        "command_step": 1
+                    },
+                    "ticks": 5
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:raycast",
+                        "distance": 20,
+                        "block": false,
+                        "entity": true,
+                        "shape_type": "collider",
+                        "fluid_handling": "any",
+                        "bientity_action": {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:damage",
+                                "amount": 6,
+                                "source": {
+                                    "name": "magic.player"
+                                }
+                            }
+                        },
+                        "before_action": {
+                            "type": "origins:play_sound",
+                            "sound": "entity.arrow.shoot",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        "hit_action": {
+                            "type": "origins:play_sound",
+                            "sound": "entity.arrow.hit_player",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        "command_along_ray": "particle visuality:sparkle ~ ~ ~ 0.25 0.25 0.25 0 10",
+                        "command_step": 1
+                    },
+                    "ticks": 10
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:raycast",
+                        "distance": 20,
+                        "block": false,
+                        "entity": true,
+                        "shape_type": "collider",
+                        "fluid_handling": "any",
+                        "bientity_action": {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:damage",
+                                "amount": 6,
+                                "source": {
+                                    "name": "magic.player"
+                                }
+                            }
+                        },
+                        "before_action": {
+                            "type": "origins:play_sound",
+                            "sound": "entity.arrow.shoot",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        "hit_action": {
+                            "type": "origins:play_sound",
+                            "sound": "entity.arrow.hit_player",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        "command_along_ray": "particle visuality:sparkle ~ ~ ~ 0.25 0.25 0.25 0 10",
+                        "command_step": 1
+                    },
+                    "ticks": 15
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:raycast",
+                        "distance": 20,
+                        "block": false,
+                        "entity": true,
+                        "shape_type": "collider",
+                        "fluid_handling": "any",
+                        "bientity_action": {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:damage",
+                                "amount": 6,
+                                "source": {
+                                    "name": "magic.player"
+                                }
+                            }
+                        },
+                        "before_action": {
+                            "type": "origins:play_sound",
+                            "sound": "entity.arrow.shoot",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        "hit_action": {
+                            "type": "origins:play_sound",
+                            "sound": "entity.arrow.hit_player",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        "command_along_ray": "particle visuality:sparkle ~ ~ ~ 0.25 0.25 0.25 0 10",
+                        "command_step": 1
+                    },
+                    "ticks": 20
+                },
+                {
+                    "type": "origins:raycast",
+                    "distance": 20,
+                    "block": false,
+                    "entity": true,
+                    "shape_type": "collider",
+                    "fluid_handling": "any",
+                    "bientity_action": {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:damage",
+                            "amount": 6,
+                            "source": {
+                                "name": "magic.player"
+                            }
+                        }
+                    },
+                    "before_action": {
+                        "type": "origins:play_sound",
+                        "sound": "entity.arrow.shoot",
+                        "volume": 1,
+                        "pitch": 1
+                    },
+                    "hit_action": {
+                        "type": "origins:play_sound",
+                        "sound": "entity.arrow.hit_player",
+                        "volume": 1,
+                        "pitch": 1
+                    },
+                    "command_along_ray": "particle visuality:sparkle ~ ~ ~ 0.25 0.25 0.25 0 10",
+                    "command_step": 1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_reflect_bar",
+                    "change": 0,
+                    "operation": "set"
+                }
+            ]
+        }
+    },
+    "reflect_charge": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:projectile"
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_reflect_bar",
+            "change": 20,
+            "operation": "add"
+        },
+        "cooldown": 1
+    },
+    "reflect_action": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_reflect_bar",
+                    "change": -20,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:raycast",
+                    "distance": 20,
+                    "block": false,
+                    "entity": true,
+                    "shape_type": "collider",
+                    "fluid_handling": "any",
+                    "bientity_action": {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:damage",
+                            "amount": 6,
+                            "source": {
+                                "name": "magic.player"
+                            }
+                        }
+                    },
+                    "before_action": {
+                        "type": "origins:play_sound",
+                        "sound": "entity.arrow.shoot",
+                        "volume": 1,
+                        "pitch": 1
+                    },
+                    "hit_action": {
+                        "type": "origins:play_sound",
+                        "sound": "entity.arrow.hit_player",
+                        "volume": 1,
+                        "pitch": 1
+                    },
+                    "command_along_ray": "particle visuality:sparkle ~ ~ ~ 0.25 0.25 0.25 0 10",
+                    "command_step": 1
+                }
+            ]
+        },
+        "key": "primary"
+    }
+}

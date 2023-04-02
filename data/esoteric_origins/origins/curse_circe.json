@@ -1,0 +1,8 @@
+{
+    "name": "Curse of Circe",
+    "powers": [
+        "esoteric_origins:curse/circe"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Curse of Midas",
+    "powers": [
+        "esoteric_origins:curse/midas"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

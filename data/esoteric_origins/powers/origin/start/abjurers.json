@@ -1,0 +1,37 @@
+{
+    "name": "Gift of The School",
+    "description": "The School of Abjuration welcomes you warmly.",
+    "type": "origins:multiple",
+    "book_recipe_change": {
+        "type": "origins:item_on_item",
+        "using_item_condition": {
+            "type": "origins:empty"
+        },
+        "on_item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:book"
+            }
+        },
+        "result": {
+            "item": "minecraft:writable_book",
+            "amount": 1
+        },
+        "on_item_action": {
+            "type": "origins:consume",
+            "amount": 6
+        }
+    },
+    "more_mana": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "mana setMax @p 100"
+        },
+        "entity_action_added": {
+            "type": "origins:execute_command",
+            "command": "mana setMax @p 300"
+        }
+    }
+}

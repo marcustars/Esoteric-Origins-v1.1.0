@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Ishtar",
+    "powers": [
+        "esoteric_origins:blessing/ishtar"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

@@ -1,0 +1,9 @@
+{
+    "name": "The Medium",
+    "description": "As a Medium, you aim to reach expertise in the School of Enchantment.\n\nYour knowledge revolves the art of Hex Casting.\n",
+    "powers": [
+        "esoteric_origins:origin/telekinesis",
+        "esoteric_origins:origin/start/enchanters"
+    ],
+    "impact": 0
+}

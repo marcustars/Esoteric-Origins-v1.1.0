@@ -1,0 +1,16 @@
+{
+    "name": "Fortune",
+    "description": "Tyche has an eye on you, and as the Goddess of Fortune, you shall encounter luck throughout your journey.\n\nGrants permanent luck.\n",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 200,
+    "tick_rate": 199,
+    "effect": {
+        "effect": "minecraft:luck",
+        "duration": 100,
+        "amplifier": 0,
+        "show_particles": false,
+        "show_icon": false
+    }
+}

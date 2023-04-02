@@ -1,0 +1,80 @@
+{
+    "name": "Liliput",
+    "description": "The trips of Gulliver yielded incredible knowledge on size transmutation, and the curses unlocked by this power have turned to you.\n\nYou are now a Liliputian.\n",
+    "type": "origins:action_on_callback",
+    "execute_chosen_when_orb": true,
+    "entity_action_lost": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:eye_height 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:hitbox_height 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:width 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:hitbox_width 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:motion 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:jump_height 1 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:step_height 1 @p"
+            }
+        ]
+    },
+    "entity_action_added": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:eye_height 0.5 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 0.5 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:hitbox_height 0.5 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:width 0.5 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:hitbox_width 0.5 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:motion 0.75 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:jump_height 1.25 @p"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:step_height 0.5 @p"
+            }
+        ]
+    }
+}

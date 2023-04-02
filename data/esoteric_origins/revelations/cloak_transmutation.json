@@ -1,0 +1,27 @@
+{
+  "block_states": {
+    "miskatonicmysteries:oceanic_gold_block": "minecraft:gold_block",
+    "miskatonicmysteries:blackstone_altar": "minecraft:blackstone",
+    "miskatonicmysteries:funky_altar": "minecraft:purpur_block",
+    "miskatonicmysteries:coral_altar": "minecraft:dead_brain_coral_block",
+    "miskatonicmysteries:mossy_stone_altar": "minecraft:mossy_cobblestone",
+    "miskatonicmysteries:nether_brick_altar": "minecraft:nether_bricks",
+    "miskatonicmysteries:prismarine_altar": "minecraft:prismarine",
+    "miskatonicmysteries:sandstone_altar": "minecraft:sandstone",
+    "miskatonicmysteries:stone_altar": "minecraft:stone",
+    "miskatonicmysteries:deepslate_altar": "minecraft:deepslate"
+  },
+  "items": {
+    "miskatonicmysteries:necronomicon": "minecraft:book",
+    "miskatonicmysteries:oceanic_gold": "minecraft:gold_ingot",
+    "miskatonicmysteries:science_journal": "minecraft:book",
+    "miskatonicmysteries:laudanum": "minecraft:potion",
+    "miskatonicmysteries:iridescent_pearl": "minecraft:gold_nugget",
+    "miskatonicmysteries:blotter": "minecraft:paper",
+    "miskatonicmysteries:incantation_yog": "minecraft:paper",
+    "miskatonicmysteries:potent_blotter": "minecraft:paper",
+    "miskatonicmysteries:hastur_chalk": "minecraft:stick",
+    "miskatonicmysteries:oceanic_gold_block": "minecraft:gold_block"
+  },
+  "advancement": "esoteric_origins:transmutation"
+}

@@ -1,0 +1,23 @@
+{
+  "block_states": {
+    "hexcasting:akashic_connector": "hexcasting:edified_planks",
+    "hexcasting:akashic_bookshelf": "hexcasting:edified_planks"
+  },
+  "items": {
+    "hexcasting:amethyst_dust": "minecraft:amethyst_shard",
+    "hexcasting:charged_amethyst": "minecraft:amethyst_shard",
+    "hexcasting:cypher": "minecraft:amethyst_shard",
+    "hexcasting:trinket": "minecraft:amethyst_shard",
+    "hexcasting:artifact": "minecraft:amethyst_shard",
+    "hexcasting:abacus": "minecraft:ladder",
+    "hexcasting:lens": "minecraft:amethyst_shard",
+    "hexcasting:scroll": "minecraft:paper",
+    "hexcasting:scroll_medium": "minecraft:paper",
+    "hexcasting:scroll_small": "minecraft:paper",
+    "hexcasting:slate": "minecraft:paper",
+    "hexcasting:spellbook": "minecraft:book",
+    "hexcasting:focus": "minecraft:amethyst_shard",
+    "hexcasting:jeweler_hammer": "minecraft:stone_pickaxe"
+  },
+  "advancement": "esoteric_origins:enchantment"
+}

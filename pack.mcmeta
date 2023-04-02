@@ -1,0 +1,11 @@
+{
+    "pack": {
+        "name": "Esoteric Origins v1.1.0",
+        "id": "esoteric_origins",
+        "pack_format": 10,
+        "authors": [
+            "marcustars"
+        ],
+        "description": "Esoteric Origins brings 7(+1) eccentric, magical origins to your minecraft experience! They are specifically tailored for the modpack Esoteric SMP."
+    }
+}

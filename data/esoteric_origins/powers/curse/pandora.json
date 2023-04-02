@@ -1,0 +1,35 @@
+{
+    "name": "Nightmares",
+    "description": "Poor Pandora never though her curiosity would instill a continuous nightmare in her. Her paranoia now belongs to you.\n\nYou are unable to sleep next to chests.\n\nPhantoms haunt you every night.\n\nSome monsters now exist only in your mind.\n",
+    "type": "origins:multiple",
+    "l0": {
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "charm:chests/normal"
+            },
+            "radius": 10,
+            "shape": "cube",
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "type": "origins:prevent_sleep",
+        "message": "The Nightmares of Pandora haunt you tonight...",
+        "set_spawn_point": true
+    },
+    "l1": {
+        "type": "origins:modify_insomnia_ticks",
+        "modifier": {
+            "operation": "set_base",
+            "value": 72000
+        }
+    },
+    "l2": {
+        "type": "origins:prevent_entity_render",
+        "entity_condition": {
+            "type": "origins:entity_group",
+            "group": "undead"
+        }
+    }
+}

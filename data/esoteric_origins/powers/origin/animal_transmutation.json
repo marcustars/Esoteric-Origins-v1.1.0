@@ -1,0 +1,290 @@
+{
+    "name": "Animal Transmutation",
+    "description": "Transmutation also involves the change of one's appearance. With your knowledge about zoology, animals are your morph of choice.\n\n[Primary] turns you into an animal.\n\n[Tertiary] turns you back into a human.\n",
+    "type": "origins:multiple",
+    "morph": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:choice",
+                    "actions": [
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p goodall:flamingo"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p goodall:toucan"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p goodall:pelican"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p naturalist:vulture"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p naturalist:butterfly"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p minecraft:chicken"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p goodall:deer"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p naturalist:rhino"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p sprout:bounce_bug"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p naturalist:giraffe"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p naturalist:hippo"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p crittersandcompanions:otter"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p ecologics:penguin"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p minecraft:axolotl"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p charm:moobloom"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p minecraft:sheep"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p minecraft:frog"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p ecologics:camel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p naturalist:lion"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "weight": 1,
+                            "element": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "identity equip @p bewitchment:snake"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle cave_enhancements:shimmer ~ ~ ~ 0.5 0.5 0.5 0.3 50"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "entity.player.swim",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        },
+        "key": "primary"
+    },
+    "morph_back": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "identity unequip @p"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "entity.zombie.converted_to_drowned",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.ternary_active"
+        }
+    }
+}

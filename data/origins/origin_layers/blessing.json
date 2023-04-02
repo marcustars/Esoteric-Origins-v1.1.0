@@ -1,0 +1,25 @@
+{
+    "order": 3,
+    "origins": [
+        "esoteric_origins:blessing_empty",
+        "esoteric_origins:blessing_artemis",
+        "esoteric_origins:blessing_gilgamesh",
+        "esoteric_origins:blessing_hekate",
+        "esoteric_origins:blessing_ishtar",
+        "esoteric_origins:blessing_lamassu",
+        "esoteric_origins:blessing_poseidon",
+        "esoteric_origins:blessing_samson",
+        "esoteric_origins:blessing_trismegistus",
+        "esoteric_origins:blessing_tyche",
+        "esoteric_origins:blessing_visnu",
+        "esoteric_origins:blessing_zephyros"
+    ],
+    "enabled": true,
+    "replace": true,
+    "gui_title": {
+        "choose_origin": "You have been blessed",
+        "view_origin": "You have been blessed"
+    },
+    "allow_random": true,
+    "allow_random_unchoosable": true
+}

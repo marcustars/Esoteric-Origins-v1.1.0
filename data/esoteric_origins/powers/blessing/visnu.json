@@ -1,0 +1,26 @@
+{
+    "name": "The Creator",
+    "description": "Not always the creators pray upon their mortals, but Visnu blesses you with their protection.\n\nWhen hurt, grants an absorption shield.\n",
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "absorption",
+                    "duration": 200,
+                    "amplifier": 2,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            }
+        ]
+    },
+    "cooldown": 300,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 0
+    }
+}

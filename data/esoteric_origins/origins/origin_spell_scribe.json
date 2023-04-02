@@ -1,0 +1,9 @@
+{
+    "name": "The Spell Scribe",
+    "description": "As a Spell Scribe, you aim to reach expertise in the School of Abjuration.\n\nYour knowledge revolves the arts of Archon, Arcanus and Scriptor Magicae.\n",
+    "powers": [
+        "esoteric_origins:origin/akashic_archive",
+        "esoteric_origins:origin/start/abjurers"
+    ],
+    "impact": 0
+}

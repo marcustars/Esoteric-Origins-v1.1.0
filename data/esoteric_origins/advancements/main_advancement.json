@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "origins:orb_of_origin"
+        },
+        "title": {
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false,
+            "text": "Esoteric Origins"
+        },
+        "description": {
+            "text": "Description"
+        },
+        "frame": "task",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "I0": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

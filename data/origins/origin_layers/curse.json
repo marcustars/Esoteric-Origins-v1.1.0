@@ -1,0 +1,25 @@
+{
+    "order": 4,
+    "origins": [
+        "esoteric_origins:curse_empty",
+        "esoteric_origins:curse_achilles",
+        "esoteric_origins:curse_atlas",
+        "esoteric_origins:curse_circe",
+        "esoteric_origins:curse_damocles",
+        "esoteric_origins:curse_gulliver",
+        "esoteric_origins:curse_hades",
+        "esoteric_origins:curse_icarus",
+        "esoteric_origins:curse_midas",
+        "esoteric_origins:curse_pandora",
+        "esoteric_origins:curse_tiamat",
+        "esoteric_origins:curse_zaldrim"
+    ],
+    "enabled": true,
+    "replace": true,
+    "gui_title": {
+        "choose_origin": "You have been Cursed",
+        "view_origin": "You have been Cursed"
+    },
+    "allow_random": true,
+    "allow_random_unchoosable": true
+}

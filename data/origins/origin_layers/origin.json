@@ -1,0 +1,15 @@
+{
+    "order": 1,
+    "origins": [
+        "esoteric_origins:origin_bewitcher",
+        "esoteric_origins:origin_botanist",
+        "esoteric_origins:origin_crystal_guru",
+        "esoteric_origins:origin_diviner",
+        "esoteric_origins:origin_esoteric",
+        "esoteric_origins:origin_hermetic",
+        "esoteric_origins:origin_medium",
+        "esoteric_origins:origin_spell_scribe"
+    ],
+    "enabled": true,
+    "replace": true
+}

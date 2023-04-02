@@ -1,0 +1,9 @@
+{
+    "name": "Gift of The School",
+    "description": "The School of Illusion welcomes you warmly.",
+    "type": "origins:modify_xp_gain",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 2
+    }
+}

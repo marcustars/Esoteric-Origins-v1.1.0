@@ -1,0 +1,8 @@
+{
+    "name": "Blessing of Artemis",
+    "powers": [
+        "esoteric_origins:blessing/artemis"
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

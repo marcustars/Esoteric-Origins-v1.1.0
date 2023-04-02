@@ -1,0 +1,20 @@
+{
+  "block_states": {
+    "gobber2:gobber2_ore": "minecraft:stone",
+    "gobber2:gobber2_ore_deepslate": "minecraft:deepslate",
+    "gobber2:gobber2_ore_nether": "minecraft:netherrack",
+    "gobber2:gobber2_ore_end": "minecraft:end_stone"
+  },
+  "items": {
+    "gobber2:gobber2_globette": "minecraft:gunpowder",
+    "gobber2:gobber2_globette_nether": "minecraft:gunpowder",
+    "gobber2:gobber2_globette_end": "minecraft:gunpowder",
+    "gobber2:gobber2_glob": "minecraft:gunpowder",
+    "gobber2:gobber2_glob_nether": "minecraft:gunpowder",
+    "gobber2:gobber2_glob_end": "minecraft:gunpowder",
+    "gobber2:gobber2_rod": "minecraft:stick",
+    "gobber2:gobber2_rod_nether": "minecraft:stick",
+    "gobber2:gobber2_rod_end": "minecraft:stick"
+  },
+  "advancement": "minecraft:end/find_end_city"
+}

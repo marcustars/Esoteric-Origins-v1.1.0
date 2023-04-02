@@ -1,0 +1,290 @@
+{
+    "name": "Swinemorphosis",
+    "description": "Ulises knew the strength of Circe's curse, but to you it was unexpected until you suffered the consequences.\n\nTurn into a pig unexpectedly.\n",
+    "type": "origins:multiple",
+    "pig_bar": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 8000,
+        "start_value": 0,
+        "min_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": 7900,
+            "operation": "set"
+        },
+        "max_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": 100,
+            "operation": "set"
+        }
+    },
+    "pig_bar_charge_sneak": {
+        "condition": {
+            "type": "origins:sneaking"
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": 20,
+            "operation": "add"
+        }
+    },
+    "pig_bar_charge_sprint": {
+        "condition": {
+            "type": "origins:sprinting"
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": 40,
+            "operation": "add"
+        }
+    },
+    "pig_bar_charge_swim": {
+        "condition": {
+            "type": "origins:swimming"
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": 80,
+            "operation": "add"
+        }
+    },
+    "pig_bar_charge_land": {
+        "type": "origins:action_on_land",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": 100,
+            "operation": "add"
+        }
+    },
+    "pig_bar_charge_item": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": 100,
+            "operation": "add"
+        }
+    },
+    "pig_bar_charge_break": {
+        "type": "origins:action_on_block_break",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": 150,
+            "operation": "add"
+        },
+        "only_when_harvested": true
+    },
+    "pig_bar_charge_block": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": -150,
+            "operation": "add"
+        },
+        "action_result": "success"
+    },
+    "pig_bar_charge_hurt": {
+        "type": "origins:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": 250,
+            "operation": "add"
+        },
+        "cooldown": 1
+    },
+    "pig_bar_charge_hit": {
+        "type": "origins:self_action_on_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": -250,
+            "operation": "add"
+        },
+        "cooldown": 1
+    },
+    "pig_bar_charge_sun": {
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": -100,
+            "operation": "add"
+        }
+    },
+    "pig_bar_charge_food": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<=",
+            "compare_to": 10
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": -150,
+            "operation": "add"
+        }
+    },
+    "pig_bar_charge_health": {
+        "condition": {
+            "type": "origins:health",
+            "comparison": "<=",
+            "compare_to": 10
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": -200,
+            "operation": "add"
+        }
+    },
+    "pig_bar_charge_rain": {
+        "condition": {
+            "type": "origins:in_rain"
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": -250,
+            "operation": "add"
+        }
+    },
+    "pig_bar_charge_rain_": {
+        "condition": {
+            "type": "origins:xp_levels",
+            "comparison": ">=",
+            "compare_to": 20
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pig_bar",
+            "change": 250,
+            "operation": "add"
+        }
+    },
+    "morph_interval1": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_pig_bar",
+                    "comparison": ">=",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_pig_bar",
+                    "comparison": "<",
+                    "compare_to": 2000
+                }
+            ]
+        },
+        "type": "origins:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "identity equip @p minecraft:pig"
+        },
+        "cooldown": 1
+    },
+    "morph_interval2": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_pig_bar",
+                    "comparison": ">=",
+                    "compare_to": 2000
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_pig_bar",
+                    "comparison": "<",
+                    "compare_to": 4000
+                }
+            ]
+        },
+        "type": "origins:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "identity unequip @p"
+        },
+        "cooldown": 1
+    },
+    "morph_interval3": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_pig_bar",
+                    "comparison": ">=",
+                    "compare_to": 4000
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_pig_bar",
+                    "comparison": "<",
+                    "compare_to": 6000
+                }
+            ]
+        },
+        "type": "origins:action_on_hit",
+        "cooldown": 1
+    },
+    "morph_interval4": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_pig_bar",
+                    "comparison": ">=",
+                    "compare_to": 6000
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_pig_bar",
+                    "comparison": "<",
+                    "compare_to": 8000
+                }
+            ]
+        },
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:execute_command",
+                "command": "identity unequip @p"
+            }
+        },
+        "cooldown": 1
+    }
+}

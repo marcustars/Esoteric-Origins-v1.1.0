@@ -1,0 +1,9 @@
+{
+    "name": "The Diviner",
+    "description": "As a Diviner, you aim to reach expertise in the School of Divination.\n\nYour knowledge revolves the art of Spectrum.\n",
+    "powers": [
+        "esoteric_origins:origin/reveal_entities",
+        "esoteric_origins:origin/start/diviners"
+    ],
+    "impact": 0
+}
